@@ -1,0 +1,28 @@
+Report: HW0 - Compile It!
+==========================
+
+Author: F74018888 王小明 <wang@xiaoming.tw>
+
+Description:
+
+(Write your description here.
+For example:
+How do you finish this homework?
+What did you learned from this homework?
+Did you do or write something special for bonus?
+...etc.)
+
+Compilation:
+
+	gcc -o hw0 hw0.c
+
+
+Execution:
+
+	./hw0 example
+
+
+Output:
+
+	(paste your output here)
+
