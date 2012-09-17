@@ -90,7 +90,7 @@ void bytes2hex(BYTE *bytes, size_t count, char *hex)
 {
 	size_t i;
 	for (i=0; i < count; i++) {
-		sprintf(hex+i*2, "%2x", bytes[i]);
+		sprintf(hex+i*2, "%02x", bytes[i]);
 	}
 	sprintf(hex+i*2, "%c", 0);
 }
