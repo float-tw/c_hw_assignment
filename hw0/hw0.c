@@ -57,20 +57,31 @@ void nckuhash(const char *stu_no, const char *salt, char *result)
 	BYTE hashsum[NBYTES];
 	const char *src;
 	size_t i;
+	char flag1, flag2;
 
 	// implement hash algorithm
 	memset(hashsum, 0, sizeof(hashsum));
 	src = salt;
-	i = 0;
+	i = 1;
+	flag1 = 0;
+	flag2 = 0;
+	// using salt to init hashsum
 	while(1){
-		hashsum[i] = (hashsum[i] ^ (*src)) + 1;
+		hashsum[i] = (hashsum[i] ^ (*src)) + (hashsum[(i + NBYTES - 1)%NBYTES]);
 		src++, i++;
-		if(*src=='\0' && i==NBYTES) break;
-		if(*src=='\0') src = salt;
-		if(i==NBYTES) i = 0;
+		if(flag1 && flag2) break;
+		if(*src=='\0') {
+			src = salt;
+			flag1 = 1;
+		}
+		if(i==NBYTES) {
+			i = 0;
+			flag2 = 1;
+		}
 	}
-
-	//memcpy(hashsum, "ABCDEFGH", NBYTES); // XXX: test data
+	// start hash
+	for(i=0; stu_no[i]; i++)
+		hashsum[ i % NBYTES ] += stu_no[i];
 
 	bytes2hex(hashsum, NBYTES, result);
 }
