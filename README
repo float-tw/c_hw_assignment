@@ -1,0 +1,38 @@
+C Programming Language Homework
+===============================
+
+Hi! This is about your C programming language homework.
+Here's some guide for you to do homework.
+You may follow it step by step. Cheers.
+
+- Change your **current** directory to your **home directory (~)**
+
+		cd
+
+- Retrieve the homework (including this file)
+
+		git clone /homework
+
+- Change your **current** directory to homework
+
+		cd homework
+
+- Open README (this file) and take a look
+
+		vim README
+
+	In vim, you may exit with typing `:wq` and press enter.
+
+- Change your **current** directory to hw0
+
+		cd hw0
+
+- List files under this directory
+
+		ls
+
+	You will see these files: `hw0.c`, `README`, `REPORT`.
+	Take a look at `README` first! I believe you've got it.
+
+- Follow the instructions in `README` and finish your first homework!
+
