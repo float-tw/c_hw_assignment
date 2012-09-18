@@ -47,3 +47,27 @@ First Step
 	You need to **briefly** decribe what you did this time.
 	For example: Finish hw0 REPORT
 
+
+Future Step
+-----------
+
+- Retrieve the homework hw1. You should be in the homework directory first.
+
+		git pull origin hw1
+
+	You will find a new folder named `hw1`.
+	Go into `hw1` and follow the `README`!
+
+- To edit the source code, you need vi/vim.
+
+		cd hw1
+		vim hw1.c
+
+- When you finish your work, you should...
+
+		git add hw1.c REPORT
+		git commit
+
+	You need to **briefly** decribe what you did this time.
+	For example: Finish hw1 and the REPORT
+
