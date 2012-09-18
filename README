@@ -5,6 +5,9 @@ Hi! This is about your C programming language homework.
 Here's some guide for you to do homework.
 You may follow it step by step. Cheers.
 
+First Step
+----------
+
 - Change your **current** directory to your **home directory (~)**
 
 		cd
@@ -35,4 +38,12 @@ You may follow it step by step. Cheers.
 	Take a look at `README` first! I believe you've got it.
 
 - Follow the instructions in `README` and finish your first homework!
+
+- When you finish your work, you should...
+
+		git add REPORT
+		git commit
+
+	You need to **briefly** decribe what you did this time.
+	For example: Finish hw0 REPORT
 
