@@ -7,7 +7,8 @@ You have to **compile** the program using the following commands:
 
 	gcc -o hw0 hw0.c
 
-And use the following command (with any word you like) to **execute** your program: (Do not forget to use some word you like ;))
+And use the following command (with any word you like) to **execute** your program.
+Do not forget to use some word you like ;)
 
 	./hw0 <some_word_you_like>
 
